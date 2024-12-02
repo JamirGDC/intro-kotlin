@@ -48,7 +48,7 @@ class exercisesNumbers {
     private fun isPrimeNumber(checkNumber: Int): Boolean
     {
         if(checkNumber == 0 || checkNumber == 1 || checkNumber == 4) return false;
-        for (i in 2 until  checkNumber)
+        for (i in 2..<checkNumber)
         {
             if(checkNumber % i == 0)
                 return false;
