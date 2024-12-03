@@ -1,6 +1,6 @@
 package excerciseNumbers
 
-class exercisesNumbers {
+class ExerciseNumbersMethods {
 
     fun sum(firstNumber: Int, secondNumber: Int): Int
     {
