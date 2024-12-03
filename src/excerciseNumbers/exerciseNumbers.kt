@@ -1,7 +1,7 @@
 package excerciseNumbers
 
 fun main() {
-    val exercisesNumbers = exercisesNumbers();
+    val exercisesNumbers = ExerciseNumbersMethods();
 
     val exercise1 : Int =  exercisesNumbers.sum(2, 3)
     println("La suma es $exercise1")
