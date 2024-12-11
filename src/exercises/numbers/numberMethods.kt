@@ -1,37 +1,65 @@
-package excerciseNumbers
+package exercises.numbers
 
-class ExerciseNumbersMethods {
+class NumberMethods {
 
+    //region exercise 1
     fun sum(firstNumber: Int, secondNumber: Int): Int
     {
         return firstNumber + secondNumber
     }
+    // endregion
+
+    //region exercise 2
 
     fun multiply(firstNumber: Int, secondNumber: Int): Int
     {
         return firstNumber * secondNumber
     }
+    // endregion
+
+    //region exercise 3
+
     fun divide(dividend: Double, divider: Int): Double? {
         return if (divider != 0) dividend / divider else null
     }
+    // endregion
+
+    //region exercise 4
+
     fun divide(dividend: Int, divider: Int): Int?
     {
         return if(dividend != 0) divider else null
     }
+    // endregion
+
+    //region exercise 5
+
     fun percentage(playedMatches: Int, wonMatches: Int): String?
     {
         if (playedMatches < wonMatches) return null
         val result : Float = wonMatches * 100f / playedMatches
         return "$result%"
     }
+    // endregion
+
+    //region exercise 6
+
     fun largestNumber(firstNumber: Int, secondNumber: Int): Int
     {
         return maxOf(firstNumber, secondNumber)
     }
+    // endregion
+
+    //region exercise 7
+
     fun volume(with: Int, volume: Int, height: Int): Int
     {
         return with * volume * height
     }
+    // endregion
+
+    //region exercise 8
+
     fun primeNumber(primeCount: Int): List<Int>
     {
         val numbers: MutableList<Int> = mutableListOf()
@@ -44,6 +72,9 @@ class ExerciseNumbersMethods {
         }
         return numbers
     }
+    // endregion
+
+    //region exercise 9
 
     private fun isPrimeNumber(checkNumber: Int): Boolean
     {
@@ -55,6 +86,8 @@ class ExerciseNumbersMethods {
         }
         return true
     }
+
+    // endregion
 
 
 }
