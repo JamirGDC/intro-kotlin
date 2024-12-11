@@ -1,8 +1,6 @@
-package excerciseStrings
+package exercises.strings
 
-import java.util.*
-
-class ExerciseStringsMethods {
+class stringMethods {
 
     fun concatenate(firstString: String, secondString: String): String
     {
@@ -16,13 +14,16 @@ class ExerciseStringsMethods {
 
     fun trimStringStartEnd(stringToTrim: String, charToTrim: Char): String
     {
-        val result = when {
-            stringToTrim.startsWith(charToTrim) -> stringToTrim.substring(1)
-            stringToTrim.endsWith(charToTrim) -> stringToTrim.substring(0, stringToTrim.length - 1)
-            else -> stringToTrim
+        var result = stringToTrim.trim();
+        if (result.startsWith(charToTrim)) {
+            result = result.substring(1)
         }
-        return result
 
+        if (result.endsWith(charToTrim)) {
+            result = result.substring(0, result.length - 1)
+        }
+
+        return result;
     }
 
     fun firstTwoChar(stringToEdit : String) : String
@@ -32,8 +33,10 @@ class ExerciseStringsMethods {
 
     fun checkIfEqual(stringToCheck : String) : Boolean
     {
-        return stringToCheck.substring(0) == stringToCheck.substring(1)
+        return stringToCheck.substring(0,2) == stringToCheck.takeLast(2)
     }
+
+
 
     fun checkIfEqual(firstStringToCheck : String, secondStringToCheck : String) : Boolean
     {
