@@ -1,4 +1,6 @@
 import exercises.arrays.ExerciseArray
+import exercises.arrays_and_objects.ArraysAndObjects
+
 import exercises.numbers.ExerciseNumbers
 import exercises.strings.ExerciseStrings
 
@@ -31,7 +33,9 @@ fun main() {
 
     //endregion
 
-
+    //region Arrays and Objects
+    val arraysAndObjectsMethods = ArraysAndObjects()
+    //endregion
 
 
 }
