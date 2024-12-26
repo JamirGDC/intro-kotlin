@@ -2,7 +2,7 @@ package exercises.arrays_and_objects.objects
 
 import exercises.arrays_and_objects.`class`.Student
 
-object studentFactory {
+object StudentFactory {
 
     fun createStudent(name: String, age: Int, gradle: Double): Student {
         return Student(name, age, gradle)

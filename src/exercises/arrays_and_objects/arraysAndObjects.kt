@@ -1,11 +1,11 @@
 package exercises.arrays_and_objects
 
-import exercises.arrays_and_objects.objects.classroomFactory
+import exercises.arrays_and_objects.objects.ClassroomFactory
 
 class ArraysAndObjects {
 
 
-    val classArrayAndObjects = classroomFactory.createCLassWhitStudents()
+    val classArrayAndObjects = ClassroomFactory.createCLassWhitStudents()
     init {
         printClassRoomDetails()
         printStudentsWithA()
